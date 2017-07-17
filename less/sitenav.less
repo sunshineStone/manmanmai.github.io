@@ -1,0 +1,101 @@
+@import "base1.less";
+//头部
+.head{
+  height:88/40rem;
+  background-color: #FF841D;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  font-size: 1.2rem;
+  .title>img {
+    right:14/40rem ;
+    width:68/40rem;
+    .center-y();
+  }
+}
+
+//内容
+.nav{
+  background-color: #fff;
+  ul{
+    .clearfix();
+    width:70%;
+    margin:0 auto;
+    >li{
+      width:40%;
+      margin:4%;
+      border:1px solid #ccc;
+      background-color: #eee;
+      .fl();
+      .clearfix();
+      a{
+        >img  {
+          width:.8rem;
+        }
+        .fl();
+      }
+      span{
+        .fr();
+        font-size: .5rem;
+      }
+    }
+  }
+}
+//尾部
+.foot{
+  height:193/40rem;
+  margin-top: 48/40rem;
+  overflow: hidden;
+  .login{
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    height: 65/40rem;
+    line-height:65/40rem;
+    overflow: hidden;
+    >span{
+      text-align: center;
+      display: block;
+      .fl();
+      font-size: 24/40rem;
+      font-weight: 700;
+      color: #000;
+    }
+    >span:nth-child(1){
+      width: 30%;
+    }
+    >span:nth-child(2){
+      width: 30%;
+      box-sizing: border-box;
+      border-left: 1px solid #aaa;
+      border-right: 1px solid #aaa;
+    }
+    >span:nth-child(3){
+      width: 40%;
+      a{
+        color: #000;
+      }
+    }
+  }
+  .mobile{
+    padding-top: 33/40rem;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 24/40rem;
+    >span{
+      font-weight: 700;
+    }
+    >span:nth-child(1){
+      color: #FF091B;
+    }
+    >span:nth-child(2){
+      color: #000;
+      margin: 0 15/40rem;
+    }
+    >span:nth-child(3){
+      color: #ccc;
+    }
+    >p{
+
+    }
+  }
+}

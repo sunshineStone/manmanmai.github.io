@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="js/rem.js"></script>
+  <link rel="stylesheet" href="less/base1.css">
+  <link rel="stylesheet" href="less/gsproduct.css">
+</head>
+<body>
+<!--头部分-->
+<header class="head">
+  <div class="title">
+    <div class="left"></div>
+    凑单品
+    <img src="images/header_app.png">
+  </div>
+</header>
+<!--导航条-->
+<section class="nav">
+  <div class="shopBox">
+  </div>
+  <div class="areaBox">
+  </div>
+  <div class="priceBox">
+    全部价格
+  </div>
+</section>
+<!--内容部分-->
+<section class="goodsList">
+
+</section>
+<!--底部部分-->
+<footer class="foot">
+  <div class="login">
+    <span>登陆</span><span>注册</span><span><a href="#">返回顶部</a></span>
+  </div>
+  <div class="mobile">
+    <span>手机APP下载</span><span>慢慢买手机版</span><span>--掌上比价平台</span>
+    <p>m.manmanbuy.com</p>
+  </div>
+  <div class="goTop"> ↑ </div>
+</footer>
+<script type=text/template id="navTpl">
+    <select name="">
+    {{each result v i}}
+      <option value="{{v.shopId}}">{{v.shopName}}</option>
+    {{/each}}
+    </select>
+</script>
+<script type=text/template id="areaTpl">
+    <select name="" id="">
+      {{each result v i}}
+      <option value="{{v.areaId}}">{{v.areaName}}</option>
+      {{/each}}
+    </select>
+</script>
+<script type=text/template id="goodsTpl">
+  <ul>
+    {{each result v i}}
+      <li>
+        <img src="{{v.productImg}}" alt="">
+        <p>{{v.productName}}</p>
+        <div>
+          <span>{{v.productPrice}}</span>
+          <span><a href="#">去凑单</a></span>
+        </div>
+      </li>
+    {{/each}}
+  </ul>
+
+</script>
+<script src="lib/jquery-1.12.4.js"></script>
+<script src="lib/template-web.js"></script>
+<script src="js/gsproduct.js"></script>
+</body>
+</html>

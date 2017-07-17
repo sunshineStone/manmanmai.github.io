@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="js/rem.js"></script>
+  <link rel="stylesheet" href="less/base1.css">
+  <link rel="stylesheet" href="less/brandList.css">
+</head>
+<body>
+<!--标题部分-->
+<header class="head">
+  <div class="title">
+    <img src="images/header_logo.png">
+    <img src="images/header_app.png">
+  </div>
+  <div class="search">
+    <input type="text" placeholder="请输入你想比价的商品">
+    <button>搜索</button>
+  </div>
+</header>
+
+<!--首页条-->
+<section class="homepage">
+  <a href="./homepage.html">首页 </a> >
+  <a href="javascript:(0)">全部分类 </a> >
+</section>
+<!--内容部分-->
+<section class="list">
+  <h4>电视品牌哪个牌子好</h4>
+  <ul class="electric">
+
+  </ul>
+  <h4>平板电视产品销量排行</h4>
+  <ul class="productGoods">
+
+  </ul>
+  <h4>平板电视最新评论</h4>
+  <ul class="goodsdiscuss">
+
+  </ul>
+</section>
+<!--底部部分-->
+<footer class="foot">
+  <div class="login">
+    <span>登陆</span><span>注册</span><span><a href="#">返回顶部</a></span>
+  </div>
+  <div class="mobile">
+    <span>手机APP下载</span><span>慢慢买手机版</span><span>--掌上比价平台</span>
+    <p>m.manmanbuy.com</p>
+  </div>
+</footer>
+<script type=text/template id="electricTpl">
+  {{each result v i}}
+    <li data-id="{{v.brandTitleId}}">
+        <div class="left">
+        <span>
+          {{i+1}}
+        </span>
+        </div>
+        <div class="right">
+          <div class="left">
+            <h6>{{v.brandName}}</h6>
+            <p>{{v.brandInfo}}</p>
+          </div>
+          <div class="right">
+            >
+          </div>
+        </div>
+    </li>
+  {{/each}}
+</script>
+<script type=text/template id="productTpl">
+  {{each result v i}}
+  <div class="content" data-id="{{v.productId}}">
+    <div class="left">
+      <a href="javascript:(0)">
+        {{@v.productImg}}
+      </a>
+    </div>
+    <div class="right">
+      <p>{{v.productName}}</p>
+      <p>{{v.productPrice}}</p>
+      <div class="discuss">
+        <span class="sleft">{{v.productQuote}}</span>
+        <span class="sright">{{v.productCom}}</span>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</script>
+<script type=text/template id="discussTpl">
+  {{each result v i}}
+  <div class="content" data-id="{{v.productId}}">
+    <div class="left">
+      <a href="#">
+        {{@v.productImg}}
+      </a>
+    </div>
+    <div class="right">
+      <p>{{v.productName}}</p>
+    </div>
+  </div>
+  <div class="con">
+    <div class="top"><span>{{v.comName}}</span><span>{{v.comTime}}</span></div>
+    <p class="bot">{{v.comContent}}</p>
+  </div>
+  {{/each}}
+</script>
+<script src="lib/jquery-1.12.4.js"></script>
+<script src="lib/template-web.js"></script>
+<script src="js/brandList.js"></script>
+</body>
+</html>

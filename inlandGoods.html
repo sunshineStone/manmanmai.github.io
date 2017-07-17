@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="js/rem.js"></script>
+  <link rel="stylesheet" href="less/base1.css">
+  <link rel="stylesheet" href="less/inlandGoods.css">
+</head>
+<body>
+<!--标题部分-->
+<header class="head">
+  <div class="title">
+    <div class="left"></div>
+    国内折扣
+    <img src="images/header_app.png">
+  </div>
+</header>
+<!--内容部分-->
+<section class="content">
+
+</section>
+<!--二维码部分-->
+<section class="buyCode">
+  <img src="images/mmbweixin2.png" alt="">
+</section>
+<!--评论部分-->
+<section class="comment"></section>
+<!--底部部分-->
+<footer class="foot">
+  <div class="login">
+    <span>登陆</span><span>注册</span><span><a href="#">返回顶部</a></span>
+  </div>
+  <div class="mobile">
+    <span>手机APP下载</span><span>慢慢买手机版</span><span>--掌上比价平台</span>
+    <p>m.manmanbuy.com</p>
+  </div>
+</footer>
+
+</article>
+<script type=text/template id="contentTpl">
+  {{each result v i}}
+  <p>{{v.productName}}</p>
+  <p>{{v.productPrice}}</p>
+  <p>{{v.productFrom}}&nbsp; {{v.productTime}}&nbsp; {{v.productTips}}</p>
+  <article>
+    <div>{{@v.productInfo}}</div>
+    <div class="smallPic">{{@v.productImg}}</div>
+    <div class="largePic">{{@v.productImg}}</div>
+  </article>
+  <div class="city">{{v.productCity}}</div>
+  {{/each}}
+ </script>
+
+<script type=text/template id="contentTpl2">
+  {{each result v i}}
+    <p>{{v.productName}}</p>
+    <p>{{v.productPrice}}</p>
+    <p>{{v.productFrom}}&nbsp; {{v.productTime}}&nbsp; {{v.productTips}}</p>
+    <article>
+      <div>{{@v.productInfo}}</div>
+      <div class="smallPic">{{@v.productImgLg}}</div>
+      <div class="largePic">{{@v.productImgLg}}</div>
+    </article>
+    <div class="city">{{@v.productCity}}</div>
+  {{/each}}
+</script>
+<script type=text/template id="commentTpl2">
+  {{each result v i}}
+    {{@v.productComment}}
+  {{/each}}
+</script>
+<script type=text/template id="commentTpl">
+  {{each result v i}}
+    {{@v.productComment}}
+  {{/each}}
+</script>
+<script src="lib/jquery-1.12.4.js"></script>
+<script src="lib/template-web.js"></script>
+<script src="js/inlandGoods.js"></script>
+</body>
+</html>

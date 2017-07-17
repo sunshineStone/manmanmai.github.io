@@ -1,0 +1,453 @@
+@charset "utf-8";
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  /* 解决IOS默认滑动很卡的情况 */
+  -webkit-overflow-scrolling: touch;
+}
+/* 禁止缩放表单 */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input {
+  resize: none;
+  border: none;
+}
+/* 取消链接高亮  */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* 设置HTML5元素为块 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+/* 图片自适应 */
+img {
+  width: 100%;
+  height: auto;
+  width: auto\9;
+  /* ie8 */
+  display: block;
+  -ms-interpolation-mode: bicubic;
+  /*为了照顾ie图片缩放失真*/
+}
+/* 初始化 */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 12px/1.5 'Microsoft YaHei', '宋体', Tahoma, Arial, sans-serif;
+  color: #555;
+  background-color: #F1F1F1;
+}
+em,
+i {
+  font-style: normal;
+}
+ul,
+li {
+  list-style-type: none;
+}
+strong {
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  color: #969696;
+  display: inline-block;
+  font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;
+}
+a:hover {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-family: 'Microsoft YaHei';
+}
+img {
+  border: none;
+}
+input {
+  font-family: 'Microsoft YaHei';
+}
+/*单行溢出*/
+/*多行溢出 手机端使用*/
+/* 水平垂直居中的公共类 */
+/* 水平居中公共类 */
+/* 垂直居中公共类 */
+body {
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+  position: relative;
+}
+.head {
+  height: 5rem;
+  background-color: #fff;
+}
+.head > .title {
+  height: 2.45rem;
+  background-color: #FF841D;
+  position: relative;
+}
+.head > .title > img:nth-child(1) {
+  left: 0.825rem;
+  width: 9.275rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.head > .title > img:nth-child(2) {
+  right: 0.35rem;
+  width: 1.7rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.head .search {
+  height: 1.5rem;
+  padding: 0 0.5rem;
+  padding-top: 0.7rem;
+}
+.head .search input {
+  float: left;
+  width: 14.25rem;
+  height: 100%;
+  text-indent: 1rem;
+  font-size: 0.5rem;
+  background-color: #F1F1F1;
+  border-radius: 1.5rem;
+  outline: 0 none;
+}
+.head .search button {
+  float: right;
+  width: 3.175rem;
+  height: 100%;
+  background-color: #FF841D;
+  border-radius: 1.5rem;
+  font-size: 0.6rem;
+  color: #fff;
+  border: none;
+  outline: 0 none;
+}
+.homepage {
+  font: 700 0.7rem "yahei";
+  padding: 0 0.375rem;
+  border-bottom: 1px solid #aaa;
+  border-top: 1px solid #aaa;
+  line-height: 1.85rem;
+}
+.homepage > a {
+  color: #000;
+  font: 700 0.7rem "yahei";
+}
+.list h4 {
+  height: 1.7rem;
+  font: 700 0.6rem/1.5rem "宋体";
+  text-indent: 0.5rem;
+  color: #803600;
+  border-bottom: 1px solid #aaa;
+}
+.list .electric {
+  background-color: #fff;
+}
+.list .electric li {
+  padding: .2rem 0;
+  border-bottom: 1px solid #ccc;
+  zoom: 1;
+}
+.list .electric li:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+.list .electric li > .left {
+  width: 10%;
+  float: left;
+}
+.list .electric li > .left span {
+  margin-left: 40%;
+  width: 1rem;
+  height: 1rem;
+  font-size: .8rem;
+  text-align: center;
+  color: #fff;
+  display: block;
+  background-color: #ccc;
+}
+.list .electric li > .right {
+  width: 90%;
+  float: right;
+  zoom: 1;
+}
+.list .electric li > .right:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+.list .electric li > .right > .left {
+  float: left;
+}
+.list .electric li > .right > .left h6 {
+  font-size: .5rem;
+  color: #000;
+}
+.list .electric li > .right > .left p {
+  font-size: 0.45rem;
+}
+.list .electric li > .right > .right {
+  font-size: 1rem;
+  float: right;
+  margin-right: 0.375rem;
+}
+.list .electric li:nth-child(1) span {
+  background-color: #F10D0D;
+}
+.list .electric li:nth-child(2) span {
+  background-color: #FF8400;
+}
+.list .electric li:nth-child(3) span {
+  background-color: #8ADF5B;
+}
+.productGoods {
+  overflow: hidden;
+}
+.productGoods .content {
+  height: 6.425rem;
+  position: relative;
+  background-color: #fff;
+}
+.productGoods .left {
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.productGoods .left img {
+  height: 5rem;
+  width: auto;
+}
+.productGoods .right {
+  width: 13.75rem;
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+.productGoods .right > p:nth-child(1) {
+  color: #000;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-top: 0.9rem;
+}
+.productGoods .right > p:nth-child(2) {
+  color: #FF4800;
+  font-size: 0.7rem;
+}
+.productGoods .right .discuss {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 1.5rem;
+  color: #cccccc;
+  font-size: 0.6rem;
+}
+.productGoods .right .discuss > span:nth-child(2) {
+  position: absolute;
+  right: 0.375rem;
+}
+.goodsdiscuss {
+  overflow: hidden;
+  background-color: #fff;
+}
+.goodsdiscuss .content {
+  height: 6.425rem;
+  position: relative;
+  background-color: #fff;
+}
+.goodsdiscuss .content .left {
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.goodsdiscuss .content .left img {
+  height: 5rem;
+  width: auto;
+}
+.goodsdiscuss .content .right {
+  width: 13.75rem;
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+.goodsdiscuss .content .right > p:nth-child(1) {
+  color: #000;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-top: 0.9rem;
+}
+.goodsdiscuss .con {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid ;
+  background-color: #eee;
+}
+.goodsdiscuss .con .top {
+  margin-bottom: .5rem;
+}
+.goodsdiscuss .con .top span:nth-child(1) {
+  float: left;
+}
+.goodsdiscuss .con .top span:nth-child(2) {
+  float: right;
+}
+.foot {
+  height: 4.825rem;
+  overflow: hidden;
+  margin-top: 1.2rem;
+}
+.foot .login {
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  height: 1.625rem;
+  line-height: 1.625rem;
+  overflow: hidden;
+}
+.foot .login > span {
+  text-align: center;
+  display: block;
+  float: left;
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: #000;
+}
+.foot .login > span:nth-child(1) {
+  width: 30%;
+}
+.foot .login > span:nth-child(2) {
+  width: 30%;
+  box-sizing: border-box;
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+}
+.foot .login > span:nth-child(3) {
+  width: 40%;
+}
+.foot .login > span:nth-child(3) a {
+  color: #000;
+}
+.foot .mobile {
+  padding-top: 0.825rem;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 0.6rem;
+}
+.foot .mobile > span {
+  font-weight: 700;
+}
+.foot .mobile > span:nth-child(1) {
+  color: #FF091B;
+}
+.foot .mobile > span:nth-child(2) {
+  color: #000;
+  margin: 0 0.375rem;
+}
+.foot .mobile > span:nth-child(3) {
+  color: #ccc;
+}

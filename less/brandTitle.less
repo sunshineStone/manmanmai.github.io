@@ -1,0 +1,154 @@
+
+@import "base1.less";
+//头部
+.head{
+  height:200/40rem;
+  background-color: #fff;
+  >.title{
+    height: 98/40rem;
+    background-color: #FF841D;
+    position: relative;
+    >img:nth-child(1){
+      left: 33/40rem;
+      width:371/40rem;
+      .center-y();
+    }
+    >img:nth-child(2){
+      right:14/40rem ;
+      width:68/40rem;
+      .center-y();
+    }
+  }
+  //搜索
+  .search{
+    height:60/40rem;
+    padding: 0 20/40rem;
+    padding-top: 28/40rem;
+    input{
+      .fl();
+      width:570/40rem;
+      height: 100%;
+      text-indent: 1rem;
+      font-size: 20/40rem;
+      background-color: #F1F1F1;
+      border-radius: 60/40rem;
+      outline: 0 none;
+    }
+    button{
+      .fr();
+      width:127/40rem;
+      height: 100%;
+      background-color: #FF841D;
+      border-radius: 60/40rem;
+      font-size: 24/40rem;
+      color: #fff;
+      border: none;
+      outline: 0 none;
+    }
+  }
+}
+//首页
+.homepage{
+  font:700 .7rem "yahei" ;
+  padding:0 15/40rem;
+  border-bottom: 1px solid #aaa;
+  border-top: 1px solid #aaa;
+  line-height:74/40rem;
+  >a{
+    color: #000;
+    font:700 .7rem "yahei" ;
+  }
+}
+//热门品牌
+.hot{
+  width:95%;
+  margin:.5rem auto;
+  line-height:76/40rem;
+  border:1px solid #aaaaaa;
+  color: #883501;
+  font-size: .8rem;
+}
+//列表部分
+.list{
+  ul{
+    li{
+      border-top: 1px solid #ccc;
+      a{
+        width: 100%;
+        line-height:76/40rem;
+        padding:0 .5rem;
+        box-sizing: border-box;
+        font-size: .8rem;
+        font-weight: 700;
+        color: #000;
+        .clearfix();
+        span:nth-child(1){
+          .fl();
+        }
+        span:nth-child(2){
+          .fr();
+        }
+      }
+    }
+    li:nth-last-child(1){
+      border-bottom: 1px solid #ccc;
+    }
+  }
+}
+.foot{
+  height:193/40rem;
+  overflow: hidden;
+  margin-top: 48/40rem;
+  .login{
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    height: 65/40rem;
+    line-height:65/40rem;
+    overflow: hidden;
+    >span{
+      text-align: center;
+      display: block;
+      .fl();
+      font-size: 24/40rem;
+      font-weight: 700;
+      color: #000;
+    }
+    >span:nth-child(1){
+      width: 30%;
+    }
+    >span:nth-child(2){
+      width: 30%;
+      box-sizing: border-box;
+      border-left: 1px solid #aaa;
+      border-right: 1px solid #aaa;
+    }
+    >span:nth-child(3){
+      width: 40%;
+      a{
+        color: #000;
+      }
+    }
+  }
+  .mobile{
+    padding-top: 33/40rem;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 24/40rem;
+    >span{
+      font-weight: 700;
+    }
+    >span:nth-child(1){
+      color: #FF091B;
+    }
+    >span:nth-child(2){
+      color: #000;
+      margin: 0 15/40rem;
+    }
+    >span:nth-child(3){
+      color: #ccc;
+    }
+    >p{
+
+    }
+  }
+}

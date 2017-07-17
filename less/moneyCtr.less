@@ -1,0 +1,148 @@
+@import "base1.less";
+.head{
+  height:88/40rem;
+  background-color: #FF841D;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  font-size: 1.2rem;
+  .title>img {
+    right:14/40rem ;
+    width:68/40rem;
+    .center-y();
+  }
+}
+.changePage{
+
+  >button{
+    width:164/40rem;
+    height:67/40rem;
+    border-radius: 10/40rem;
+    margin: 0 41/40rem;
+    font-size: .7rem;
+    outline: 0 none;
+  }
+  >button:nth-child(1){
+    .fl();
+  }
+  >button:nth-child(2){
+    .fr();
+  }
+  >select{
+    width:164/40rem;
+    height:67/40rem;
+    font-size: .7rem;
+    margin: 0 41/40rem;
+    text-indent: 1rem;
+    >option{
+      width:164/40rem;
+    }
+  }
+}
+//商品部分
+.goods{
+  overflow: hidden;
+  .content{
+    height:257/40rem;
+    position: relative;
+    background-color: #fff;
+  }
+  .left{
+    left: 0;
+    .center-y();
+  }
+  .left img{
+
+    height:5rem;
+    width:auto;
+  }
+  .right{
+    width:550/40rem;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    padding-left: 15/40rem;
+    box-sizing: border-box;
+    >p:nth-child(1){
+      color: #000;
+      font-size: 30/40rem;
+      font-weight: 700;
+      margin-top: 36/40rem;
+    }
+    >p:nth-child(2){
+      color: #FF4800;
+      font-size: 28/40rem;
+    }
+    .discuss{
+      width: 100%;
+      overflow: hidden;
+      position: absolute;
+      bottom: 60/40rem;
+      color: #cccccc;
+      font-size: 24/40rem;
+    }
+
+    .discuss>span:nth-child(2){
+      position: absolute;
+      right: 15/40rem;
+    }
+  }
+}
+//尾部
+.foot{
+  height:193/40rem;
+  margin-top: 48/40rem;
+  overflow: hidden;
+  .login{
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    height: 65/40rem;
+    line-height:65/40rem;
+    overflow: hidden;
+    >span{
+      text-align: center;
+      display: block;
+      .fl();
+      font-size: 24/40rem;
+      font-weight: 700;
+      color: #000;
+    }
+    >span:nth-child(1){
+      width: 30%;
+    }
+    >span:nth-child(2){
+      width: 30%;
+      box-sizing: border-box;
+      border-left: 1px solid #aaa;
+      border-right: 1px solid #aaa;
+    }
+    >span:nth-child(3){
+      width: 40%;
+      a{
+        color: #000;
+      }
+    }
+  }
+  .mobile{
+    padding-top: 33/40rem;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 24/40rem;
+    >span{
+      font-weight: 700;
+    }
+    >span:nth-child(1){
+      color: #FF091B;
+    }
+    >span:nth-child(2){
+      color: #000;
+      margin: 0 15/40rem;
+    }
+    >span:nth-child(3){
+      color: #ccc;
+    }
+    >p{
+
+    }
+  }
+}

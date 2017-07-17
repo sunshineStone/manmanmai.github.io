@@ -1,0 +1,133 @@
+@import "base1.less";
+//body{
+//  background-color: #fff;
+//}
+//头部
+.head{
+  text-align: center;
+  background-color: #fff;
+  font-size: 1rem;
+  color: #fff;
+  >.title{
+    height: 98/40rem;
+    line-height:98/40rem;
+    background-color: #F4483E;
+    position: relative;
+    >.left{
+      background: url(../images/jiantou.png) center  no-repeat;
+      left: 33/40rem;
+      width: 32px;
+      height: 30px;
+      .center-y();
+    }
+    >img{
+      right:14/40rem ;
+      width:68/40rem;
+      .center-y();
+    }
+  }
+
+}
+
+.content{
+  padding: 0 15/40rem;
+  .box{
+    width:95%;
+    margin:.5rem auto;
+  }
+  a{
+
+    color: #000;
+    text-align: center;
+    width:4.5rem;
+    height:152/40rem;
+    border: 1px solid;
+    position: relative;
+    margin:10/40rem 10/40rem;
+    >img{
+      width:100/40rem;
+      height:auto;
+      position: absolute;
+      top:10/40rem;
+      .center-x();
+    }
+    >p{
+      width: 100%;
+      font-size: .4rem;
+      position: absolute;
+      bottom:0;
+      .center-x();
+    }
+  }
+}
+
+.foot{
+  background-color: #EFEFEF;
+  height:220/40rem;
+  overflow: hidden;
+  margin-top: 68/40rem;
+
+  .login{
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    height: 65/40rem;
+    line-height:65/40rem;
+    overflow: hidden;
+    >span{
+      text-align: center;
+      display: block;
+      .fl();
+      font-size: 24/40rem;
+      font-weight: 700;
+      color: #000;
+    }
+    >span:nth-child(1){
+      width: 30%;
+    }
+    >span:nth-child(2){
+      width: 30%;
+      box-sizing: border-box;
+      border-left: 1px solid #aaa;
+      border-right: 1px solid #aaa;
+    }
+    >span:nth-child(3){
+      width: 40%;
+      a{
+        color: #000;
+      }
+    }
+  }
+  .mobile{
+    padding-top: 33/40rem;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 24/40rem;
+    >span{
+      font-weight: 700;
+    }
+    >span:nth-child(1){
+      color: #FF091B;
+    }
+    >span:nth-child(2){
+      color: #000;
+      margin: 0 15/40rem;
+    }
+    >span:nth-child(3){
+      color: #ccc;
+    }
+    >p{
+
+    }
+  }
+  .goTop{
+    width:1rem;
+    height:1rem;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom:.5rem;
+    right:.5rem;
+    font-size: .5rem;
+    background-color: #ccc;
+  }
+}

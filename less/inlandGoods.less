@@ -1,0 +1,231 @@
+@import "base1.less";
+body{
+  background-color: #fff;
+}
+//头部
+.head{
+  text-align: center;
+  background-color: #fff;
+  font-size: 1rem;
+  color: #fff;
+  >.title{
+    height: 98/40rem;
+    background-color: #FF841D;
+    position: relative;
+    >.left{
+      background: url(../images/jiantou.png) center  no-repeat;
+      left: 33/40rem;
+      width: 32px;
+      height: 30px;
+      .center-y();
+    }
+    >img{
+      right:14/40rem ;
+      width:68/40rem;
+      .center-y();
+    }
+  }
+
+}
+
+//内容
+.content{
+  padding: 15/40rem;
+  overflow: hidden;
+  p:nth-child(1){
+    font: 700 1rem "yahei" ;
+    color: #000;
+    margin-top: .5rem;
+  }
+  p:nth-child(2){
+    font: 700 .5rem "yahei";
+    color: #FF4C13;
+    margin: .5rem 0 1rem;
+  }
+  p:nth-child(3){
+    font-size: 18/40rem;
+  }
+  article{
+    margin-top: 1rem;
+    position: relative;
+    div:nth-child(1){
+      font-size:.8rem;
+      width:60%;
+    }
+    .smallPic>img{
+      width:206/40rem;
+      height:210/40rem;
+      position: absolute;
+      top:1rem;
+      right:1rem;
+    }
+    .largePic>img{
+      width:460/40rem;
+      height:442/40rem;
+    }
+  }
+  .city{
+    margin: 1rem 0;
+    #disstorck{
+      width:50%;
+      margin: 0 auto;
+      >li{
+        a{
+          width:50%;
+          margin: 0 auto;
+          font-size: .8rem;
+          color: #000;
+          overflow: hidden;
+          span{
+            strong{
+              .fr();
+              color: #FF841D;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+}
+.buyCode{
+  img{
+    width: 80%;
+    height:auto;
+    margin: 0 auto;
+  }
+}
+.comment{
+  margin-top: 54/40rem;
+  .tit{
+    margin-left: 15/40rem;
+    font-size: .8rem;
+    font-weight: 700;
+    color: #000;
+  }
+  .form{
+    margin: 0 auto;
+    position: relative;
+    width:94%;
+    textarea{
+      width:100%;
+      height:218/40rem;
+      border: 2px solid #ccc;
+    }
+    .ctrl>input{
+      position: absolute;
+      right: -2px;
+      bottom: 4px;
+      border: none;
+      outline: 0 none;
+      width:5rem;
+      height:78/40rem;
+      background-color: #FF841D;
+      color: #fff;
+      font-size: .8rem;
+    }
+  }
+  .list{
+    padding-left: .8rem;
+    ul{
+      overflow: hidden;
+
+      li{
+        .clearfix();
+        .userimg>img{
+          width:1.5rem;
+          height:1.5rem;
+          border-radius: 50%;
+          .fl();
+          margin-top: .25rem;
+        }
+        .con{
+          width:80%;
+          .fl();
+          .name{
+            .clearfix();
+            .username{
+              margin-left: 7.5px;
+              color: cyan;
+              font-size: .6rem;
+              .fl()
+            }
+             .time{
+               font-size: .6rem;
+               .fr();
+             }
+            }
+
+          .content{
+            font-size: .5rem;
+            img{
+              width:10%;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.foot{
+  background-color: #EFEFEF;
+  height:220/40rem;
+  overflow: hidden;
+  margin-top: 68/40rem;
+
+  .login{
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    height: 65/40rem;
+    line-height:65/40rem;
+    overflow: hidden;
+    >span{
+      text-align: center;
+      display: block;
+      .fl();
+      font-size: 24/40rem;
+      font-weight: 700;
+      color: #000;
+    }
+    >span:nth-child(1){
+      width: 30%;
+    }
+    >span:nth-child(2){
+      width: 30%;
+      box-sizing: border-box;
+      border-left: 1px solid #aaa;
+      border-right: 1px solid #aaa;
+    }
+    >span:nth-child(3){
+      width: 40%;
+      a{
+        color: #000;
+      }
+    }
+  }
+  .mobile{
+    padding-top: 33/40rem;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 24/40rem;
+    >span{
+      font-weight: 700;
+    }
+    >span:nth-child(1){
+      color: #FF091B;
+    }
+    >span:nth-child(2){
+      color: #000;
+      margin: 0 15/40rem;
+    }
+    >span:nth-child(3){
+      color: #ccc;
+    }
+    >p{
+
+    }
+  }
+}
